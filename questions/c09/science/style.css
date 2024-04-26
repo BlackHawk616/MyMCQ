@@ -1,0 +1,177 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin: 0;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(photos/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.navbar{
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+#logo{
+  width: 1px;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  position: relative;  
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin: auto;
+    padding-left: 0;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  bottom: -5px;
+  transition: 0.7s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 75px;
+  margin-top: 80px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 25px;
+  font-family: sans-serif;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
+}
+button{
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 3px solid #009688;
+  background: transparent;
+  color: #fff;  
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 17px;
+}
+span{
+  background: #009688;
+  height: 105%;
+  width: 0%;
+  border-radius: 22px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.75s;
+}
+button:hover span{
+  width: 100%;
+}
+
+/* footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid black;
+}
+.footer h4{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.footer p{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.icons .fa{
+  font-size: 1.5rem;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart{
+  color: red;
+}
+
+/* course page */
+.sub-home{
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.sub-home h1{
+  margin-top: 100px;
+  font-size: 3.3em;
+  -webkit-text-stroke-color:black ;
+  -webkit-text-stroke-width: 2px;
+  text-transform: uppercase;
+}
+
+/* Questions */
+.question{
+  width: 85%;
+  margin: auto;
+  margin-top: 5%;
+}
+.ques{
+  border-radius: 10px;
+  margin: 5px;
+  padding: 1% 10%;
+  box-sizing: border-box;
+}
+.ques li{
+  list-style-type: none;
+}
+summary{
+  display: block;
+  margin-top: 10px;
+  color: red;
+}
